@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reviews</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #343a40;
+        }
+        header {
+            background-color: #f1f1f1;
+            color: #343a40;
+        }
+        .blog-header-logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .nav-item a {
+            color: #343a40;
+        }
+        .nav-item a:hover {
+            color: #6c757d;
+        }
+        .lead {
+            color: #6c757d;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            background-color: #fff;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-body {
+            background-color: #fff;
+            border-top: 5px solid #a2d5f2;
+            border-radius: 0 0 10px 10px;
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+            color: #343a40;
+        }
+        .card p {
+            margin: 0.5em 0;
+            color: #555;
+        }
+        .card .price {
+            font-size: 1.2em;
+            color: #28a745;
+            margin: 0.5em 0;
+        }
+        .card .rating {
+            font-size: 1em;
+            color: #ffc107;
+        }
+        footer {
+            background-color: #f1f1f1;
+            color: #343a40;
+        }
+        footer a {
+            color: #343a40;
+        }
+        footer a:hover {
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="border-bottom lh-1 py-3 mb-4">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-body-emphasis text-decoration-none" href="/">Hotel Reviews</a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="link-secondary" href="#" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="/Signup">Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+            <a class="nav-item nav-link link-body-emphasis" href="/">Home</a>
+            <a class="nav-item nav-link link-body-emphasis" href="#">Top Rated</a>
+            <a class="nav-item nav-link link-body-emphasis" href="#">Newest Reviews</a>
+            <a class="nav-item nav-link link-body-emphasis" href="#">Popular Destinations</a>
+            <a class="nav-item nav-link link-body-emphasis" href="#">About Us</a>
+            <a class="nav-item nav-link link-body-emphasis" href="#">Contact</a>
+        </nav>
+    </div>
+</div>
+
+<div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-light">
+    <div class="col-lg-6 px-0">
+        <h1 class="display-4 fst-italic">Discover the Best Hotels Around the World</h1>
+        <p class="lead my-3">Read honest reviews from real guests and find the perfect hotel for your next trip. Whether you're looking for luxury, budget-friendly, or family-friendly hotels, we have reviews that will help you make the best choice.</p>
+        <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="text-center my-4">Top Hotel Reviews</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="https://level.travel/media/wp-content/uploads/2020/03/maxx-royal2-min.jpg" alt="Sunset Resort" class="bd-placeholder-img card-img-top">
+                <div class="card-body">
+                    <h2>Sunset Resort</h2>
+                    <p>Location: Beachside</p>
+                    <p>Room: Deluxe Suite</p>
+                    <p class="price">500 zł/night</p>
+                    <p class="rating">4.5 stars (200 reviews)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYDogFkpk5Dpg31TMfkvnisixQq7JxgdqnJg&s" alt="Mountain Inn" class="bd-placeholder-img card-img-top">
+                <div class="card-body">
+                    <h2>Mountain Inn</h2>
+                    <p>Location: Hills</p>
+                    <p>Room: Standard Room</p>
+                    <p class="price">300 zł/night</p>
+                    <p class="rating">4.0 stars (150 reviews)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="https://cf.bstatic.com/static/img/theme-index/bg_resorts_new/6e8294d75f648eab2cd2818f0a40854367e584a5.jpg" alt="City Hotel" class="bd-placeholder-img card-img-top">
+                <div class="card-body">
+                    <h2>City Hotel</h2>
+                    <p>Location: Downtown</p>
+                    <p>Room: Executive Suite</p>
+                    <p class="price">600 zł/night</p>
+                    <p class="rating">4.8 stars (250 reviews)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-EJDmKzi2-epuqOHC8QOXGTJLqOd2N/jiJrRclpcFL4FTHmS8XQe+mJujF5D5Q+70" crossorigin="anonymous"></script>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Top Rated</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Newest Reviews</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Popular Destinations</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Hotel Reviews, Inc</p>
+    </footer>
+</div>
+
+</body>
+</html>
